@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: 'Google Sans', Roboto, Arial, sans-serif;
+      background-color: #f1f3f4; /* Minimal Google Forms style */
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      max-width: 900px;
+      width: 100%;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #202124;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #202124;
+      margin-top: 30px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 10px;
+    }
+
+    p, li {
+      color: #3c4043;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Make "Click My CV" link blue */
+    a[href="GRAGASIN_CV.pdf"] {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a[href="GRAGASIN_CV.pdf"]:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #f1f3f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 90%;
+      font-family: monospace;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      max-width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    /* ===== Portfolio Cards ===== */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-body h3 {
+      margin-top: 0;
+      color: #202124;
+    }
+
+    /* Resume Button */
+    .resume-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #202124;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: #000000;
+    }
+
+    /* ===== Responsive Fix ===== */
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 0;
+      }
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Project Portfolio</h1>
+
+    <!-- Student Information -->
+    <div>
+      <h2>Student Information</h2>
+      <p><strong>Full Name:</strong> <code>Nathaniel Rotsen G. Gragasin</code></p>
+      <p><strong>Birthdate:</strong> <code>03-11-2001</code></p>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <code>nrtsn01@gmail.com</code></p>
+      <p><strong>Number:</strong> <code>09514184171</code></p>
+<p>
+	<a href="https://github.com/drpkck" target="_blank">Github</a> |
+	<a href="https://www.linkedin.com/in/nr-gragasin" target="_blank">LinkedIn</a>
+</p
+    </div>
+
+    <!-- Portfolio Expansion -->
+    <div>
+      <h2>Projects</h2>
+      <div class="portfolio-grid">
+        <div class="card">
+          <img src="project_one.png" alt="Project 1">
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p>My personal portfolio showcasing skills, experience, and projects with a clean, responsive design. Includes a contact form, skills section, and smooth navigation.</p>
+	  <a href="page1.html" target="_blank" class="project-link">View</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="project_two.png" alt="Project 2">
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p>An interactive web app allowing users to change the background color with a single click. Built using HTML, CSS, and JavaScript for a simple and engaging UI.</p>
+	<a href="page2.html" target="_blank" class="project-link">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div>
+      <h2>Skills</h2>
+      <p><code>HTML & CSS</code> <code>JavaScript</code> <code>Python</code> <code>MySQL</code> <code>Git & GitHub</code></p>
+    </div>
+
+    <!-- Resume Section -->
+    <div>
+      <h2>Resume</h2>
+<p>
+     <a href="GRAGASIN_CV.pdf" target="_blank">My CV</a>
+</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
